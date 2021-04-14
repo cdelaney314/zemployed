@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<h1> Development Plan </h1>
+<h2> Relational Schema </h2>
+<p>
+<br>
+Recruiter(recruiter_id, name, email, phone_number, company)
+<br>
+key = recruiter_id
+<br>
+S = { recruiter_id -> name, email, phone_number, company }
+<br>
+<br> 
+Job(job_id, title, type, description, salary)
+<br>
+key = job_id
+<br>
+S = { job_id -> title, type, description, salary }
+<br>
+<br> 
+Applicant(applicant_id, name, email, phone_number)
+<br>
+key = applicant_id
+<br>
+S = { applicant_id -> name, email, phone_number }
+<br>
+<br> 
+Assessment(assessment_id, applicant_id, personality_score)
+<br>
+key  = assessment_id
+<br>
+S = { assessment_id -> applicant_id, personality_score  }
+<br>
+<br> 
+Resume(resume_id, applicant_id, gpa, skills, experience)
+<br>
+key = resume_id
+<br>
+S = { resume_id  -> applicant_id, gpa, skills, experience }
+<br>
+<br> 
+Reference(reference_id, name, email, phone_number, company, position)
+<br>
+key = reference_id
+<br>
+S = { reference_id -> name, email, phone_number, company, position }
+<br>
+<br> 
+Application(application_id, job_id, applicant_id, resume_id)
+<br>
+key = application_id
+<br>
+S = { application_id -> job_id, applicant_id, resume_id }
+<br>
+</p>
+
+<h2> Final Choice of databases and software platforms/languages</h2>
+<p> We will be using mysql and the other tools on db.cse.nd.edu and html for the database and web app.  We will be using python for the advanced functions most likely.</p>
+
+<h2> Data </h2>
+<p> We will be getting our data from real Zemployed users</p>
+
+<h2> Labor Division </h2>
+<p> Walter and Conor both took Data Science, as well as Riley is in Machine Learning, so they will handle the data science portions of our project, particularly the parts where we group candidates based on their data.  Olivia will handle the other advanced function, implementing a user-input driven weighted ranking algorithm of the candidates.  None of us have a lot of experience with html, so we will be working on the html together, as well as the general database structure together. </p>
+
+<h2> Timeline </h2>
+<p> 
+<br>
+May 26 - initial html and ability to upload data to database
+<br>
+April 7th - working base for the database
+<br>
+April 14th - working grouping advanced function
+<br>
+April 21st - working ranking system of applicants for a job
+<br>
+</p>
+
+
+
+</html>

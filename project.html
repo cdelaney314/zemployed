@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Zemployed </h1>
+<h2>Description </h2>
+<p>Zemployed is a job application service, which specializes in listing jobs for undergraduates looking for internships and jobs right out of college/ while they are still in college.  Zemployed has a universal profile for each applicant (This is the data we will be loading in) which includes a list of jobs applied to, a variety of biographical information, as well as a personality assessment score ( an array of size 5).  Our application will be for recruiters that use Zemployed, allowing them to peruse the database of applicants, sort by who has applied to what job, and see different profiles.</p>
+
+<h2>Usefullness</h2>
+<p>Zemployed is an incredibly useful service as it strives to solve the issues currently facing the recruitment industry.  Primarily, Zemployed addresses the issue of grade inflation and the lack of focus on company fit.  Essentially, Zemployed acts as the resume of the future, with an emphasis on universality (like the common app for college apps) and comprehensiveness (focusing on more than just GPA).  This will provide huge value to students who struggle to find internships, such as Arts and Letters students.</p>
+
+<h2>Realness </h2>
+<p>Data is collected from real Zemployed.com users.  The database we build will house real data and provide real functionality to recruiters. </p>
+
+<h2>Funcitonality </h2>
+<p>Beyond the basic functionalities, we will have a grouping feature that uses clustering classification on the personality test results to group applicants to a specific job against each other in 5 dimensions.  A stretch goal would be clustering the applicants based on their resume info as well.  The recruiter will enter a job into the function, and will be presented with a graphical representation of the groups as well as a summary list of the groups found. </p>
+
+<p>Our second function will be a sorting tool for the recruiter, which will take a job, a personality score, a GPA weight, and a fit weight as inputs.  The function will normalize the GPAs.  Then, for each candidate the function will calculate a “Fit score”, which is the difference between the input personality score and the applicants score, and then will normalize the fitscore against the rest of the applicants.  The function will calculate a percentile for GPA and fit score, and then multiply this percentile by the weight input for GPA and fit respectively, and add the two numbers together, to get a total score.  Finally, the function will return a sorted list based on the total score, of the best applicants for the job. </p>
+
+
+<h2>ER Diagram Link</h2>
+<a href="https://drive.google.com/file/d/1lRUbr-Wmt0FOtzcBzL1DXHwTgW8wNRz4/view?usp=sharing">ER DIAGRAM</a>
+
+</body>
+</html>
